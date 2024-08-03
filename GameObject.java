@@ -2,7 +2,7 @@ import java.awt.Graphics;
 
 import java.awt.Rectangle;
 
-//Size property's for the game
+//Parent class for objects
 public abstract class GameObject {
 
     protected int x, y, width, height;
