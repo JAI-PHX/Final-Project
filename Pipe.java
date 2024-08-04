@@ -14,7 +14,7 @@ import java.util.Random;
 
 import javax.imageio.ImageIO;
 
-//GameObject child class
+//Pipe class extension that implements GameObject and Drawable
 public class Pipe extends GameObject implements Drawable {
 
     private int gap, yTop, yBottom;
@@ -52,11 +52,13 @@ public class Pipe extends GameObject implements Drawable {
         }
     }
 
+    //Overridden method update
     @Override
     public void update() {
         x -= 5;
     }
 
+    //Overridden method update
     @Override
     public void draw(Graphics g) {
 

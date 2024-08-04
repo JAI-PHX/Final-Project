@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+//PlayerInputDialog is used to get player names
 public class PlayerInputDialog extends JDialog {
 
     private List<JTextField> nameFields;

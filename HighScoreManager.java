@@ -4,7 +4,7 @@ import java.util.*;
 
 public class HighScoreManager {
 
-    //Use the highscores.txt file to store user names and scores
+    //Use the highscores.txt file to read and write usernames and scores
     private static final String HIGH_SCORE_FILE = "highscores.txt";
 
     private Map<String, Integer> highScores;
@@ -16,7 +16,7 @@ public class HighScoreManager {
         loadHighScores();
     }
 
-    // Create file if not found existing file
+    // Load highscores.txt file
     private void loadHighScores() {
 
         try (BufferedReader br = new BufferedReader(new FileReader(HIGH_SCORE_FILE))) {
@@ -38,7 +38,7 @@ public class HighScoreManager {
         }
     }
 
-    //Add users earned score to the highscores.txt file
+    //Add and save users earned score to the highscores.txt file
     public void addScore(String player, int score) {
 
         highScores.put(player, Math.max(highScores.getOrDefault(player, 0), score));

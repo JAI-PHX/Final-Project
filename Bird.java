@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-//GameObject of child class
+//GameObject and implementing Drawable in the Bird class extenion
 public class Bird extends GameObject implements Drawable {
 
     private int velocity;
@@ -33,9 +33,10 @@ public class Bird extends GameObject implements Drawable {
         }
     }
 
-    //Speed of the bird
+    //Overridden method update
     @Override
 
+    //Speed of the bird
     public void update() {
 
         velocity += 1;
@@ -48,10 +49,11 @@ public class Bird extends GameObject implements Drawable {
         velocity = -10;
     }
 
-    //The hit box of the bird
+    //Overridden method update
     @Override
     public void draw(Graphics g) {
 
+        //The hit box of the bird
         g.drawImage(image, x, y, width, height, null);
     }
 }

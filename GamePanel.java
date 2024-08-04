@@ -16,6 +16,7 @@ import java.util.Map;
 
 import javax.imageio.ImageIO;
 
+//Main game panel handling the games logic and look
 public class GamePanel extends JPanel implements ActionListener {
 
     private Bird bird;
@@ -232,6 +233,7 @@ public class GamePanel extends JPanel implements ActionListener {
         JOptionPane.showMessageDialog(this, "Winner: " + winner + " with score: " + highestScore, "Game Over", JOptionPane.INFORMATION_MESSAGE);
     }
 
+    //Overridden method update
     @Override
     protected void paintComponent(Graphics g) {
 
@@ -281,6 +283,7 @@ public class GamePanel extends JPanel implements ActionListener {
         }
     }
 
+    //Overridden method update
     @Override
     public void actionPerformed(ActionEvent e) {
 
