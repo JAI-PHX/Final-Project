@@ -42,9 +42,9 @@ public class Pipe extends GameObject implements Drawable {
         this.yBottom = yTop + height + gap;
 
         try {
-            imageTop = ImageIO.read(new File("Cactus flipped.png"));
+            imageTop = ImageIO.read(new File("Cactus.png.png"));
 
-            imageBottom = ImageIO.read(new File("Cactus.png"));
+            imageBottom = ImageIO.read(new File("Cactus flipped.png.png"));
 
         } catch (IOException e) {
 

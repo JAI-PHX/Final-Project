@@ -25,7 +25,7 @@ public class Bird extends GameObject implements Drawable {
         try {
 
             //Bird image
-            image = ImageIO.read(new File("Screenshot 2024-07-25 130532.png"));
+            image = ImageIO.read(new File("Bird.png"));
 
         } catch (IOException e) {
 
