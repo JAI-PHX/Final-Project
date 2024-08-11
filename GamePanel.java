@@ -173,6 +173,8 @@ public class GamePanel extends JPanel implements ActionListener {
             repaint();
 
         } else {
+            displayFinalScore();
+
             displayWinner();
 
             startOverButton.setVisible(true);
@@ -181,6 +183,13 @@ public class GamePanel extends JPanel implements ActionListener {
             quitButton.setVisible(true);
         }
     }
+
+    private void displayFinalScore() {
+
+        // Display the final score in a message dialog
+        JOptionPane.showMessageDialog(this, currentPlayer + "'s Final Score: " + score, "Final Score", JOptionPane.INFORMATION_MESSAGE);
+    }
+
 
     private void resetGame() {
 
